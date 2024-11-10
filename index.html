@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form Layout</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray-100 font-sans">
+
+  <!-- logo section -->
+  <div class="ml-8 sm:ml-16 md:ml-32 mb-8 md:mb-16 mt-8 md:mt-16">
+    <h1 class="text-xl sm:text-2xl font-bold text-blue-600">ONESTOP NDT</h1>
+  </div>
+
+  <!-- Contact form section -->
+  <div class="flex flex-col w-full items-center">
+    <div class="w-full max-w-4xl bg-white p-6 sm:p-8 rounded-lg shadow-lg">
+      <h2 class="text-2xl sm:text-3xl font-semibold text-gray-700 mb-2">Got any questions?</h2>
+      <p class="text-gray-500 mb-6">Let's discuss it over a cup of coffee.</p>
+
+      <div id="successMessage" class="hidden bg-green-100 text-green-700 p-3 rounded mb-6">Message sent successfully!</div>
+
+      <form id="contactForm" class="space-y-6">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div>
+            <input type="text" id="name" name="name" placeholder="Name" class="input-field" required />
+            <p id="nameError" class="error-message text-red-500"></p>
+          </div>
+          <div>
+            <input type="text" id="organization" name="organization" placeholder="Organization Name" class="input-field" required />
+            <p id="organizationError" class="error-message text-red-500"></p>
+          </div>
+          <div>
+            <input type="email" id="email" name="email" placeholder="Email ID" class="input-field" required />
+            <p id="emailError" class="error-message text-red-500"></p>
+          </div>
+          <div>
+            <input type="tel" id="contact" name="contact" placeholder="Contact Number" class="input-field" required />
+            <p id="contactError" class="error-message text-red-500"></p>
+          </div>
+        </div>
+        <div>
+          <textarea id="message" name="message" placeholder="Message" rows="4" class="input-field w-full" required></textarea>
+          <p id="messageError" class="error-message text-red-500"></p>
+        </div>
+        <button type="submit" class="bg-blue-500 text-white py-2 px-6 rounded hover:bg-blue-600 transition w-32 sm:w-40">Submit →</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Map Section -->
+  <div class="flex w-full mt-8 sm:mt-16">
+    <div class="w-full h-64 sm:h-96 relative">
+      <div class="absolute top-16 sm:top-32 left-8 sm:left-32 bg-blue-800 text-white p-4 rounded-lg shadow-lg z-10">
+        <h3 class="text-lg font-semibold">OnestopNDT</h3>
+        <p>PAP/R/406 Rabale MIDC Near Dol Electric Company, Rabale MIDC, Navi Mumbai - 400701.</p>
+        <p>Landline - 022 4131 0099</p>
+        <a href="#" class="text-blue-300 hover:underline">Google Map Link</a>
+      </div>
+
+      <img class="w-full h-full object-cover" src="/assets/map.png" alt="Map">
+    </div>
+  </div>
+
+  <!-- Photos Section -->
+  <div class="flex justify-center bg-gray-100 p-6 sm:p-8 mt-8 sm:mt-16">
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4">
+      <a href="#" class="flex flex-col items-center text-gray-700 hover:text-blue-500">
+        <img src="/assets/bg1.jpg" alt="Companies" class="w-32 h-32 rounded-lg">
+        <span>Companies</span>
+      </a>
+      <a href="#" class="flex flex-col items-center text-gray-700 hover:text-blue-500">
+        <img src="/assets/bg2.jpg" alt="Jobs" class="w-32 h-32 rounded-lg">
+        <span>Jobs</span>
+      </a>
+      <a href="#" class="flex flex-col items-center text-gray-700 hover:text-blue-500">
+        <img src="/assets/bg3.jpg" alt="Articles" class="w-32 h-32 rounded-lg">
+        <span>Articles</span>
+      </a>
+      <a href="#" class="flex flex-col items-center text-gray-700 hover:text-blue-500">
+        <img src="/assets/bg4.jpg" alt="Webinars" class="w-32 h-32 rounded-lg">
+        <span>Webinars</span>
+      </a>
+      <a href="#" class="flex flex-col items-center text-gray-700 hover:text-blue-500">
+        <img src="/assets/bg5.jpg" alt="Forums" class="w-32 h-32 rounded-lg">
+        <span>Forums</span>
+      </a>
+      <a href="#" class="flex flex-col items-center text-gray-700 hover:text-blue-500">
+        <img src="/assets/bg6.jpg" alt="Application Notes" class="w-32 h-32 rounded-lg">
+        <span>Application Notes</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- footer section -->
+  <div class="flex flex-row justify-end w-full h-32 bg-blue-900 mt-8">
+    <div class="flex flex-row mt-8 sm:mt-16 mr-8 sm:mr-16">
+      <h1 class="text-xl sm:text-2xl font-bold text-white">ONESTOP NDT</h1>
+    </div>
+  </div>
+
+</body>
+
+</html>
